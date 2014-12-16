@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" >
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="JavaScript/HomePage.js" ></script>
+        <link rel="stylesheet" type="text/css" href="Css/StickyHeader.css" />
+        <link rel="stylesheet" type="text/css" href="Css/HomePage.css" />
+    </head>
+    <body>
+        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
+            <ul>
+                <li><a href="TemplateAndPreviousWork.xhtml">#{homeBean.templatePrevWorkHeaderText}</a></li>
+                <li><a href="Technologies.xhtml">#{homeBean.skillSetHeaderText}</a></li>
+                <li><a href="Rates.xhtml">#{homeBean.ratesHeaderText}</a></li>
+                <li><a href="AboutUs.xhtml">#{homeBean.aboutUsHeaderText}</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            <div class="gallery-holder">
+                <img class="image-holder" src="Images/zenprgm1.jpg" alt="Lorem ipsum"/>
+                <img class="image-holder" src="Images/zenprgm2.jpg" alt="Lorem ipsum"/>
+                <img class="image-holder" src="Images/zenprgm3.jpg" alt="Lorem ipsum"/>
+                <img class="image-holder" src="Images/zenprgm4.jpg" alt="Lorem ipsum"/>
+                <div class="sub-gallery-thumbnail" >
+                    <img class="thumbnail-image-holder" src="Images/zenprgm1.jpg" alt="Lorem ipsum"/>
+                    <img class="thumbnail-image-holder" src="Images/zenprgm2.jpg" alt="Lorem ipsum"/>
+                    <img class="thumbnail-image-holder" src="Images/zenprgm3.jpg" alt="Lorem ipsum"/>
+                    <img class="thumbnail-image-holder" src="Images/zenprgm4.jpg" alt="Lorem ipsum"/>
+                </div>
+            </div>
+            <div id="col_wrapper" >
+                <div id="left_col" >
+                    #{homeBean.homePageLeftColumn}
+                </div>
+                <div id="right_col" >
+                    #{homeBean.homePageRightColumn}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

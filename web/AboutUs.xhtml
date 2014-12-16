@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Css/StickyHeader.css" />
+        <link rel="stylesheet" type="text/css" href="Css/AboutUs.css" />
+    </head>
+    <body>
+        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
+            <ul>
+                <li><a href="TemplateAndPreviousWork.xhtml">#{aboutUsBean.templatePrevWorkHeaderText}</a></li>
+                <li><a href="Technologies.xhtml">#{aboutUsBean.skillSetHeaderText}</a></li>
+                <li><a href="Rates.xhtml">#{aboutUsBean.ratesHeaderText}</a></li>
+                <li><a href="AboutUs.xhtml">#{aboutUsBean.aboutUsHeaderText}</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            #{aboutUsBean.loremIpsumText}
+            <br />
+            <c:forEach var="bio" items="#{aboutUsBean.aboutUsInformation}" >
+                <div class="bio-holder">
+                    <img src="Images/zenprgm1.jpg" class="image-holder" />
+                    <br />
+                    <h:outputText value="#{bio}" class="text-holder" />
+                </div>
+            </c:forEach>
+        </div>
+    </body>
+</html>

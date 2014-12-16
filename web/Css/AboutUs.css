@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.bio-holder {
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+    width: 33%;
+    display: inline;
+    float: left;
+}
+
+.image-holder {
+    height: 200px;
+    width: 60%;
+    display:block;
+    margin:auto;
+}
+
+.text-holder {
+    text-align: center;
+}
