@@ -5,7 +5,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8" />
@@ -15,16 +19,24 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="Css/HomePage.css" />
     </head>
     <body>
-        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
-            <ul>
-                <li><a href="TemplateAndPreviousWork.xhtml">#{ratesBean.templatePrevWorkHeaderText}</a></li>
-                <li><a href="Technologies.xhtml">#{ratesBean.skillSetHeaderText}</a></li>
-                <li><a href="Rates.xhtml">#{ratesBean.ratesHeaderText}</a></li>
-                <li><a href="AboutUs.xhtml">#{ratesBean.aboutUsHeaderText}</a></li>
-            </ul>
-        </div>
+        <ui:include src="StickyHeader.xhtml" />
         <div id="body">
             #{ratesBean.loremIpsumText}
+            <br />
+            <ul>
+                <li>
+                    #{ratesBean.loremIpsumText} - #{ratesBean.loremIpsumText}
+                </li>
+                <li>
+                    #{ratesBean.loremIpsumText} - #{ratesBean.loremIpsumText}
+                </li>
+                <li>
+                    #{ratesBean.loremIpsumText} - #{ratesBean.loremIpsumText}
+                </li>
+                <li>
+                    #{ratesBean.loremIpsumText} - #{ratesBean.loremIpsumText}
+                </li>
+            </ul>
         </div>
     </body>
 </html>

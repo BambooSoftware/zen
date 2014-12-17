@@ -9,14 +9,14 @@ import com.java.abstractclasses.CommonBeanData;
 import com.java.data.StringConstants;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import javax.inject.Singleton;
 
 /**
  *
  * @author michael
  */
 @ManagedBean
-@RequestScoped
+@Singleton
 public class AboutUsBean extends CommonBeanData {
 
     /**

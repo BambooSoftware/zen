@@ -14,14 +14,7 @@
         <link rel="stylesheet" type="text/css" href="Css/HomePage.css" />
     </head>
     <body>
-        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
-            <ul>
-                <li><a href="TemplateAndPreviousWork.xhtml">#{homeBean.templatePrevWorkHeaderText}</a></li>
-                <li><a href="Technologies.xhtml">#{homeBean.skillSetHeaderText}</a></li>
-                <li><a href="Rates.xhtml">#{homeBean.ratesHeaderText}</a></li>
-                <li><a href="AboutUs.xhtml">#{homeBean.aboutUsHeaderText}</a></li>
-            </ul>
-        </div>
+        <ui:include src="StickyHeader.xhtml" />
         <div id="body">
             <div class="gallery-holder">
                 <img class="image-holder" src="Images/zenprgm1.jpg" alt="Lorem ipsum"/>

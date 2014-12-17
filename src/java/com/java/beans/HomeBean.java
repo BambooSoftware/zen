@@ -8,14 +8,14 @@ package com.java.beans;
 import com.java.abstractclasses.CommonBeanData;
 import com.java.data.StringConstants;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import javax.inject.Singleton;
 
 /**
  *
  * @author michael
  */
 @ManagedBean
-@RequestScoped
+@Singleton
 public class HomeBean extends CommonBeanData {
     
     /**

@@ -19,14 +19,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="Css/AboutUs.css" />
     </head>
     <body>
-        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
-            <ul>
-                <li><a href="TemplateAndPreviousWork.xhtml">#{aboutUsBean.templatePrevWorkHeaderText}</a></li>
-                <li><a href="Technologies.xhtml">#{aboutUsBean.skillSetHeaderText}</a></li>
-                <li><a href="Rates.xhtml">#{aboutUsBean.ratesHeaderText}</a></li>
-                <li><a href="AboutUs.xhtml">#{aboutUsBean.aboutUsHeaderText}</a></li>
-            </ul>
-        </div>
+        <ui:include src="StickyHeader.xhtml" />
         <div id="body">
             #{aboutUsBean.loremIpsumText}
             <br />

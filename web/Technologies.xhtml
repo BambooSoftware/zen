@@ -5,7 +5,7 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
-        <head>
+    <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,14 +14,7 @@
         <link rel="stylesheet" type="text/css" href="Css/HomePage.css" />
     </head>
     <body>
-        <div id="header" onclick="location.href = 'http://localhost:8080/ZenProgrammingEE/faces/index.xhtml';">
-            <ul>
-                <li><a href="TemplateAndPreviousWork.xhtml">#{technologiesBean.templatePrevWorkHeaderText}</a></li>
-                <li><a href="Technologies.xhtml">#{technologiesBean.skillSetHeaderText}</a></li>
-                <li><a href="Rates.xhtml">#{technologiesBean.ratesHeaderText}</a></li>
-                <li><a href="AboutUs.xhtml">#{technologiesBean.aboutUsHeaderText}</a></li>
-            </ul>
-        </div>
+        <ui:include src="StickyHeader.xhtml" />
         <div id="body">
             <c:forEach var="skill" items="#{technologiesBean.skillsList}" varStatus="status">
                 <c:choose>
